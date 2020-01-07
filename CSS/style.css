@@ -551,16 +551,27 @@ footer{
     font-size: 50px;
 }
     .div-nav nav a{
-       margin-left: 10px; 
+       margin-left: 5px; 
     }
     .texto-proyectos{
         display: flex;
         justify-content: center;  
     }
+    .texto-proyectos h2 {
+        font-size: 16px;
+    }
+    .texto-proyectos h3 {
+        letter-spacing: 2px;
+    }
     .texto-proyectos a img{
         width: 350px;
         height: 271px;
     }
+  .reverse-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
     #illustration {
     width: 100%;
 }

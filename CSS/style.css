@@ -547,8 +547,11 @@ footer{
 }
 
 @media(max-width: 600px){
+    .hello h1 {
+    font-size: 50px;
+}
     .div-nav nav a{
-       margin-left: 20px; 
+       margin-left: 10px; 
     }
     .texto-proyectos{
         width: 90%;
@@ -559,8 +562,15 @@ footer{
         width: 350px;
         height: 271px;
     }
-
-    
+    #illustration {
+    width: 100%;
+}
+    #graphic-design {
+    width: 100%;
+}
+    #ux-ui {
+    width: 100%;
+}
     .about p {
     line-height: 20px;
     font-size: 15px;

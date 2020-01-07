@@ -554,7 +554,6 @@ footer{
        margin-left: 10px; 
     }
     .texto-proyectos{
-        width: 90%;
         display: flex;
         justify-content: center;  
     }

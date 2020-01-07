@@ -1,0 +1,584 @@
+/*tipografias*/
+
+
+@font-face{
+    src: url(../FONTS/raleway/Raleway-Medium.ttf);
+    font-family:'Raleway-Medium';
+}
+@font-face{
+    src: url(../FONTS/raleway/Raleway-Bold.ttf);
+    font-family:'Raleway-Bold';
+}
+@font-face{
+    src: url(../FONTS/raleway/Raleway-Regular.ttf);
+    font-family:'Raleway-Regular';
+}
+@font-face{
+    src: url(../FONTS/raleway/Raleway-Light.ttf);
+    font-family:'Raleway-Light';
+}
+@font-face{
+    src: url(../FONTS/montserrat/Montserrat-Bold.ttf);
+    font-family:'Montserrat-Bold';
+}
+@font-face{
+    src: url(../FONTS/montserrat/Montserrat-Medium.ttf);
+    font-family:'Montserrat-Medium';
+}
+@font-face{
+    src: url(../FONTS/montserrat/Montserrat-Medium.ttf);
+    font-family:'Montserrat-Medium';
+}
+@font-face{
+    src: url(../FONTS/montserrat/Montserrat-SemiBold.ttf);
+    font-family:'Montserrat-SemiBold';
+}
+@font-face{
+    src: url(../FONTS/pistilli/Pistilli-Roman.otf);
+    font-family:'Pistilli';
+}
+
+
+/*RESET
+===============*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    color: #fff;
+}li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*----------GENERAL-----------*/
+
+h1{
+    font-family: 'Montserrat-Bold', Helvetica, Arial, sans-serif;
+    font-size: 100px;
+    letter-spacing: 10px;
+    color:#D4273E;
+}
+
+
+h2{
+    font-family: 'Montserrat-Medium', Helvetica, Arial,sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color:#ffffff;
+}
+
+h3{
+    font-family: 'Raleway-Regular', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color:#163042;
+}
+h4{
+    font-family: 'Raleway-Light', Helvetica, Arial, sans-serif;
+    color: #D4273E;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+p {
+    font-family: 'Raleway-Regular', Helvetica, Arial,sans-serif;
+    color: #D4273E;
+    line-height: 35px;
+    font-size: 25px;
+}
+
+/*-----------HEADER------------*/
+
+
+header{
+    height: 80px;
+    background: transparent;
+    display:flex;
+    align-items: center;
+    background-color:transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: all .8s;
+}
+.div-nav{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.div-nav a img{
+    width: 100px;
+}
+.div-nav nav a{
+    font-family: 'Pistilli', serif;
+    font-size: 14px;
+    color:#D4273E;
+    text-decoration: none;
+    margin-left: 48px;
+}
+.div-nav nav a:hover{
+    color:#FAA29B;
+}
+
+
+/*----------FONDO HEADER-----------*/
+
+.hello{
+    background-color: #C9F1ED;
+    height: 100vh;
+    position: relative;
+}
+
+.iammai{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello h1{
+    text-align: center;
+    margin: 0;
+}
+
+.hello h4{
+    text-align: center;
+    margin: 0;
+    margin-top: 1%;
+}
+
+
+/*----------Animation flecha roja-----------*/
+
+@keyframes flecha-scroll{
+    0%{
+       transform: translateY(0); 
+    }
+    50%{
+        transform: translateY(-15px); 
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.flecha-roja{
+    width: 100%;
+    margin: 0 auto;
+}
+.flecha-roja img{
+    height: 30px;
+    width: 50px;
+    animation-name: flecha-scroll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 25px);
+
+}
+
+
+/*----------PROYECTOS---------*/
+
+
+.proyectos{
+    background-image: url("../IMAGENES/Fondo_parallax.svg");
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     margin-bottom: 5%;
+}
+.tag{
+    width: 70%;
+    background: transparent;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tag button{
+    color:#D4273E;
+    font-family: 'Raleway-Regular', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    margin-left: 50px;
+    border: none;
+    background-color: transparent;
+}
+.tag button:focus {outline:0;}
+
+.tag button:hover{
+    font-family: 'Raleway-Bold';
+}
+.tag button:active{
+    font-family: 'Raleway-Bold';
+    text-decoration: underline wavy #D4273E;
+}
+
+/*-----------Graphic Design--------------*/
+
+#graphic-design{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+}
+
+/*-----------UX/UI--------------*/
+
+#ux-ui{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+}
+
+/*-----------Illustration--------------*/
+
+#illustration{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+}
+ 
+
+.texto-proyectos{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.drch{
+    display: flex;
+    justify-content: flex-end;
+     
+}
+.reverse-text{
+    display: flex;
+}
+
+.texto-proyectos h2{
+    color: #163042;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    margin: 0 0 0 20px;
+}
+.texto-proyectos h3{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    margin-right: 20px;
+}
+
+.texto-proyectos a img{
+    width: 620px;
+    height: 480px;
+}
+
+.texto-proyectos a img:hover{
+    opacity: 0.90;
+    filter: alpha(opacity=100);
+}
+
+
+/*----------ABOUT---------*/
+
+
+.about{
+    background-color: #C9F1ED;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes separador-rojo{
+    0%{
+        transform: scale(0.5,1);
+     }
+     50%{
+        transform: scale(1, 1);
+     }
+     100%{
+        transform: scale(0.5, 1);
+     }
+}
+
+.about img{
+    width: 140px;
+    animation-name: separador-rojo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    
+}
+
+.about p{
+    font-family: 'Raleway-Regular', Helvetica, Arial,sans-serif;
+    color:#D4273E;
+    line-height: 35px;
+    font-size: 28px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+/*-----------SKILLS------------*/
+
+.skills{
+    background-color: #163042;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-skills{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-skills{
+    display: flex;
+    justify-content: center;
+}
+.title-skills h2{
+    margin-bottom: 15%;
+}
+.container-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.skill-list{
+    font-family: 'Raleway-Regular', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    list-style-type: none;
+}
+.skill-list li{
+    margin-bottom: 20px;
+}
+/*----------FOOTER---------*/
+
+footer{
+     background:#D4273E;
+     height: 50vh;
+ }
+
+.container-footer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacto{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto img{
+    height: 40px;
+    margin-left: 10px;
+}
+.contacto a{
+    color: #C9F1ED;
+    font-size: 60px; 
+    letter-spacing: 4px; 
+    font-family: 'Montserrat-SemiBold', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;
+ }
+
+.contacto a:hover{
+    color: #FAA29B;
+ }
+.elementos_footer{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.elementos_footer p{
+    color: #C9F1ED;
+    font-size: 18px;
+    font-family: 'Raleway-Regular', Helvetica, Arial, sans-serif;  
+    display: inline-block;
+ }
+
+/*-----------Media queries------------*/
+
+@media(max-width: 1400px){
+    #ux-ui{
+    width: 900px;}
+    
+     #graphic-design{
+    width: 900px;}
+    
+   #illustration{
+    width: 900px;}
+}
+
+@media(max-width: 1050px){
+    .tag button{
+        font-size: 15px;
+        margin-left: 20px;
+    } 
+    #ux-ui{
+    width: 600px;}
+    
+     #graphic-design{
+    width: 600px;}
+    
+    #illustration{
+    width: 600px;}
+    
+    .texto-proyectos a img {
+    width: 400px;
+    height: 310px;
+    }
+    .container-skills {
+    width: 90%;}
+    
+    .skill-list{
+    font-size: 20px;
+    }
+
+    .about p{
+    line-height: 28px;
+    font-size: 20px;
+}
+    
+@media(max-width: 700px){
+    .tag {
+    width: 90%;}
+    
+   .tag button{
+        font-size: 12px;
+        margin-left: 10px;
+    } 
+    .hello h1 {
+        font-size: 70px;
+    }
+    .hello h4{
+        font-size: 12px; 
+    } 
+    .drch{
+        display:none;
+    }
+    .texto-proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .texto-proyectos h2{
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    white-space: nowrap;
+    margin: 10px;
+    }
+    
+    .drch{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .reverse-text{
+       display: flex;
+       flex-direction: column-reverse; 
+       text-align: center;
+    }
+    
+    .texto-proyectos h3{
+    writing-mode: initial;
+    transform: none;
+    white-space: normal;
+     margin: 0;
+    }
+    
+    .about p {
+    line-height: 25px;
+    font-size: 18px;
+    }
+    .title-skills h2{
+    font-size: 20px;    
+    }
+    .skill-list li {
+        font-size: 18px;    
+    }
+    .contacto a{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 600px){
+    .div-nav nav a{
+       margin-left: 20px; 
+    }
+    .texto-proyectos{
+        width: 90%;
+        display: flex;
+        justify-content: center;  
+    }
+    .texto-proyectos a img{
+        width: 350px;
+        height: 271px;
+    }
+
+    
+    .about p {
+    line-height: 20px;
+    font-size: 15px;
+    }
+    .title-skills h2{
+        font-size: 20px;    
+        }
+    .skill-list li {
+        font-size: 15px;    
+    }
+    .container-skills{
+        display: flex;
+        justify-content: center;
+    }
+    .container-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}

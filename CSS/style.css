@@ -569,7 +569,7 @@ footer{
     }
     .hello h4 {
     font-size: 12px;
-    margin-top: 1%;
+    letter-spacing: 1px;
 }
     .skill-list li {
     margin-bottom: 15px;

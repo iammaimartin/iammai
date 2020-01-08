@@ -615,4 +615,7 @@ footer{
     width: 320px;
     height: 248px;
 }
+   .div-nav nav a {
+    font-size: 12px;
+}
     }

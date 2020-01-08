@@ -571,6 +571,9 @@ footer{
     font-size: 12px;
     margin-top: 1%;
 }
+    .skill-list li {
+    margin-bottom: 15px;
+}
   .reverse-text {
     display: flex;
     flex-direction: column;
